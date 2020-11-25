@@ -253,7 +253,7 @@ class _EditProductScreenState extends State<EditProductScreen> {
                         ? Text('Enter a URL')
                         : FittedBox(
                       child: Image.network(
-                        _imageUrlController.text,
+                        _imageUrlController.text ?? "",
                         fit: BoxFit.cover,
                       ),
                     ),
